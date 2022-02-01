@@ -5,9 +5,68 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* my styling */
+
+
+
+/* header */
+.header{
+  height: 65px;
+  display: flex;
+  background-color:#c20cff;
+  align-items: center;
+  padding: 10px;
+  color: aliceblue;
+
+
+}
+
+.header-img{
+  height: 80%;
+  margin-right: 6px;
+}
+
+.header-title{
+  /* font-size: 20px; */
+  margin-right: auto;
+}
+.header-note{
+  color: cyan;
+  /* font-size: 12px; */
+}
+
+/* meme form */
+
+.meme-container{
+  padding:40px ;
+}
+
+.form{
+  display: grid;
+  grid-template:40px 40px / 1fr 1fr;
+  gap:20px ;
+
+}
+
+.meme-text{
+  text-indent: 8px;
+  border-radius:15px;
+  border: 2px solid rgb(222, 14, 250);
+}
+
+.btn{
+  grid-column: 1 / -1;
+  border-radius:15px;
+  background:#c20cff;
+  color: rgb(236, 236, 236);
+  font-weight: 800;
 }
