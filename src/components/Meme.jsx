@@ -45,11 +45,12 @@ export default function Meme() {
           onClick={getMemeImg}>
           Get a new meme image 🖼</button>
       </form>
-
-    </div>
-    <div className="meme-img-container">
+      <div className="meme-img-container">
       <img className="meme--img" src={memeImg} alt="" />
     </div>
+
+    </div>
+    
     
     </main>
   );
