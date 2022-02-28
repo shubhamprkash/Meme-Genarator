@@ -11,7 +11,7 @@ function App() {
 
         <Meme />
 
-        <h1>Moshi Moshi!</h1>
+        {/* <h1>Moshi Moshi!</h1> */}
       
     </div>
   );

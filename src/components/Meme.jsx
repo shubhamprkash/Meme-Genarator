@@ -4,18 +4,21 @@ import memeData from "../memeData";
 
 export default function Meme() {
 
-    const [memeImg,setmemeImg] = React.useEffect("");
+
+  const onSubmit = (e) => {
+      e.preventDefault();
+      console.log("refresh prevented");
+    };
+    const [memeImg,setmemeImg] = React.useState("");
 
 
     function getMemeImg(){
       // console.log("testingMemeBtn");
 
       const memesArray = memeData.data.memes;
-      const randomNum = Math.floor(Math.random()*memesArray.length)
+      const randomNum = Math.floor(Math.random()*memesArray.length);
       // console.log(randomNum);
       setmemeImg(memesArray[randomNum].url)
-
-
     }
 
   return (
