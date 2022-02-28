@@ -5,20 +5,21 @@ import memeData from "../memeData";
 export default function Meme() {
 
 
-  const onSubmit = (e) => {
-      e.preventDefault();
-      console.log("refresh prevented");
-    };
+  // const onSubmit = (e) => {
+  //     e.preventDefault();
+  //     console.log("refresh prevented");
+  //   };
     const [memeImg,setmemeImg] = React.useState("");
 
 
-    function getMemeImg(){
+    function getMemeImg(e){
       // console.log("testingMemeBtn");
 
       const memesArray = memeData.data.memes;
       const randomNum = Math.floor(Math.random()*memesArray.length);
       // console.log(randomNum);
       setmemeImg(memesArray[randomNum].url)
+      e.preventDefault();
     }
 
   return (
@@ -46,7 +47,10 @@ export default function Meme() {
       </form>
 
     </div>
-    <img src={memeImg} alt="" />
+    <div className="meme-img-container">
+      <img className="meme--img" src={memeImg} alt="" />
+    </div>
+    
     </main>
   );
 }
