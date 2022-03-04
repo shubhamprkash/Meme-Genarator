@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Header() {
-  return <div className="header">
+  return <div className="header colorfull">
 
       <img className="header-img" src={require("../images/meme-logo.png")} alt="logo" />
 

@@ -81,3 +81,16 @@ code {
   width: 100%;
   /* max-height: 700px; */
 }
+
+.colorfull {
+  background: linear-gradient(236deg, #d82bea, #8f6dc8, #f32dc0, #e67d98, red);
+  background-size: 1000% 1000%;
+
+  animation: headAni 6s ease infinite;
+}
+
+@keyframes headAni {
+  0%{background-position:87% 0%}
+  50%{background-position:14% 100%}
+  100%{background-position:87% 0%}
+}
