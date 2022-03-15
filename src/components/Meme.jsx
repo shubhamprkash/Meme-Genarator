@@ -35,7 +35,7 @@ export default function Meme() {
           />
 
           <button className="btn colorfull" onClick={getMemeImg}>
-            Get a new meme image 🖼
+            Get a new Meme Image 🖼
           </button>
         </form>
         <div className="meme-img-container">
